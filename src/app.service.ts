@@ -6,8 +6,7 @@ export class AppService {
     return 'Hello World!';
   }
   postData(text: any): string {
-    console.log(text)
-    return 'posted';
+    console.log(text);
+    return text;
   }
-
 }
