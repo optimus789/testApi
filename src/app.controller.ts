@@ -5,7 +5,6 @@ let mainText;
 @Controller()
 export class AppController {
   constructor(private readonly appService: AppService) {}
- 
 
   @Get('html')
   getHtml(): string {
