@@ -14,7 +14,6 @@ export class AppController {
   @Post('postData')
   postData(@Body() text: any): string {
     console.log(text);
-    console.log(JSON.parse(text));
     let plainText = text.text;
     plainText = plainText.replace(/<style([\s\S]*?)<\/style>/gi, '');
     plainText = plainText.replace(/<script([\s\S]*?)<\/script>/gi, '');
